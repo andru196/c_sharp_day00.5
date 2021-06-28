@@ -15,6 +15,9 @@ namespace d00_5
             NumberInBasket = 0;
         }
 
+        public static bool operator ==(Customer a, Customer b) => a?.Equals(b) ?? b as object == null;
+        public static bool operator !=(Customer a, Customer b) => !a?.Equals(b) ?? b as object != null;
+
         public void FillCart(uint max)
         {
             var rand = new System.Random();

@@ -30,7 +30,7 @@ namespace d00_5
                 new Customer("Ghafar", 8),
                 new Customer("Raja", 9),
             };
-
+            
 
 
             foreach (var cust in customers)
